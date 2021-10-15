@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TreeAwareness.Views.SIgnUpPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="SIGN UP"
+                
+                HorizontalOptions="CenterAndExpand" 
+                   TextColor="Blue"
+                   FontSize="30"/>
+
+            <Entry 
+            Placeholder="Email"
+            Keyboard="Email"
+            x:Name="EmailInput"/>
+
+            <Entry
+            Placeholder="Password"
+            IsPassword="True"
+            x:Name="PasswordInput"/>
+
+
+            <Button
+            Text="SignUp"
+            Clicked="SignUpClicked"
+            Margin="0, 40"
+            BackgroundColor="LightBlue"
+            TextColor="Black"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
